@@ -1,0 +1,12 @@
+@import "./base/normalize";
+
+// Layout //
+@import "./layout/Header";
+@import "./layout/Footer.scss";
+
+// Pages //
+@import "./pages/Accueil.scss";
+
+// Composants // 
+@import "./components/Box_Accueil.scss";
+@import "./components/Card_Accueil.scss";

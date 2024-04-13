@@ -1,25 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "./styles/index.css";
-import Accueil from "./composants/Accueil";
-import A_Propos from "./composants/A_Propos";
-import Erreur from "./composants/A_Propos";
-import Logement from "./composants/Logement";
-import Header from "./composants/Header";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./composants/Routes";
+import Header from "./composants/layout/Header";
+import Footer from "./composants/layout/Footer";
+import "./css/style.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/A_Propos" element={<A_Propos />} />
-        <Route path="/Logement" element={<Logement />} />
-        <Route path="*" element={<Erreur />} />
-      </Routes>
+      <AppRoutes />
+      <Footer />
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
-document.getElementById("root");

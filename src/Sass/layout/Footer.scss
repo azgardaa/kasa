@@ -1,0 +1,14 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    .Logo_Footer{
+        filter: invert(1 );
+    }
+    .Text_Footer {
+        color: white;
+    }
+}
