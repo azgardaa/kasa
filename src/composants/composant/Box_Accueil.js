@@ -1,11 +1,9 @@
-import Image_Accueil from "../image/image_acceuil.png";
-
-function Box_Accueil() {
+function Box_Accueil({ Image, Accroche }) {
   return (
     <div className="Box_Accueil">
-      <img className="Image_Accueil" src={Image_Accueil}></img>
+      <img className="Image_Accueil" src={Image}></img>
       <div className="Text_Accueil">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>{Accroche}</h1>
       </div>
     </div>
   );

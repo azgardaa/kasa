@@ -1,6 +1,6 @@
 function Card_Accueil({ id, title, cover }) {
   return (
-    <div className="Card_Appartement" key={id}>
+    <div className="Appartement" key={id}>
       <img
         className="Cover_Appartement"
         src={cover}

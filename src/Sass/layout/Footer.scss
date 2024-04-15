@@ -4,11 +4,14 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-
-    .Logo_Footer{
-        filter: invert(1 );
-    }
+    padding-top: 10px;
+    left: 0;
+    right: 0;
+   
+    position: absolute;
     .Text_Footer {
         color: white;
+        font-size: 24px;
+        padding-top: 1%;
     }
 }
