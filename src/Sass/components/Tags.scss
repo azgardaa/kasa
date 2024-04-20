@@ -1,0 +1,20 @@
+.Box_Tags {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 25px;
+    margin: 3% 0;
+    .Tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 20%;
+    height: 100%;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #FF6060;
+    border-radius: 15px;
+    font-weight: 700;
+}
+}

@@ -22,7 +22,7 @@ function Slider({ images }) {
       <img
         className="Image_Slider"
         src={images[imageIndex]}
-        alt={`Image ${imageIndex}`}
+        alt={`Image n°${imageIndex}`}
       />
       <img src={Arrow} className="Bouton_SliderD" onClick={nextImage}></img>
     </div>

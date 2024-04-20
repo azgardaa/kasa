@@ -2,12 +2,24 @@ import { useParams } from "react-router-dom";
 import data from "../Json/logements.json";
 import { useEffect, useState } from "react";
 import Slider from "../composant/Slider";
+import Tags from "../composant/Tags";
+import Rating from "../composant/Rating";
+import starA from "../image/star-active.svg";
+import starNA from "../image/star-inactive.svg";
+import Tab from "../composant/Tab";
 
 function Logement() {
   const { id } = useParams();
   const [logement, setLogement] = useState({
     cover: [],
     pictures: [],
+    title: "",
+    location: "",
+    tags: [],
+    host: [],
+    rating: [],
+    description: "",
+    equipments: [],
   });
 
   useEffect(() => {
@@ -21,6 +33,32 @@ function Logement() {
     <div>
       <div>
         <Slider images={logement.pictures} />
+      </div>
+      <div className="Logement_Box">
+        <div className="Logement_Info">
+          <h2 className="Logement_Titre">{logement.title}</h2>
+          <p className="Logement_Location">{logement.location}</p>
+          <Tags tags={logement.tags} />
+        </div>
+        <div className="Box_Host">
+          <div className="Info_Host">
+            <h3 className="Logement_Host">{logement.host.name}</h3>
+            <img
+              className="Picture_Host"
+              src={logement.host.picture}
+              alt={`Photo de ${logement.host.name}`}
+            ></img>
+          </div>
+          <Rating rating={logement.rating} starA={starA} starNA={starNA} />
+        </div>
+      </div>
+      <div className="Box_Tab">
+        <div className="Tab">
+          <Tab titre="Déscription" information={logement.description} />
+        </div>
+        <div className="Tab">
+          <Tab titre="Équipements" information={logement.equipments} />
+        </div>
       </div>
     </div>
   );

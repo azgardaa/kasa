@@ -1,4 +1,4 @@
-@import "./base/normalize";
+@import "./base/base";
 
 // Layout //
 @import "./layout/Header";
@@ -6,8 +6,12 @@
 
 // Pages //
 @import "./pages/Accueil.scss";
+@import "./pages/Logement.scss";
 
 // Composants // 
 @import "./components/Box_Accueil.scss";
 @import "./components/Card_Accueil.scss";
 @import "./components/Slider.scss";
+@import "./components/Tags.scss";
+@import "./components/Rating.scss";
+@import "./components/Tab.scss"
