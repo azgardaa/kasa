@@ -22,3 +22,10 @@
         transform: scaleX(-1);
       }
 }
+
+@media screen and (max-width: 480px) {
+    .Box_Slider {
+      height: 260px;
+    }   
+
+}

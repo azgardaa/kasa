@@ -44,6 +44,46 @@
             }
         }
     }
+   
     
       
+} 
+.Box_Tab {
+        display: flex;
+        justify-content: space-between;
+    }
+
+@media screen and (max-width: 480px) {
+    .Logement_Box{
+        display: flex;
+        flex-direction: column;
+        .Logement_Info {
+            width: 100%;
+            .Logement_Titre {
+                font-size: 18px;
+            }
+            .Logement_Location{
+                font-size: 14px;
+            }
+        }
+        .Box_Host {
+            width: 100%;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            .Info_Host {
+                gap: 10%;
+                .Logement_Host {
+                    font-size: 12px;
+                }
+                .Picture_Host {
+                    max-width: 48px;
+                    max-height: 48px;
+                }
+            }
+        }
+    }
+    .Box_Tab {
+        flex-direction: column;
+    }
 }

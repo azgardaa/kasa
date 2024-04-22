@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    margin: 2% 0;
         .Link{
             padding: 10px;
             font-size: 24px;
@@ -13,4 +13,26 @@
                 text-decoration: none;
             }
         }
+}
+@media screen and (max-width: 480px) {
+    .Header {
+        img{
+            width: 80%;
+            padding: 2%;
+        }
+        .Link {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 0;
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            a {
+                padding: 10%;
+            }
+            .Active {
+                text-decoration: underline;
+            }
+        }
+    }
 }

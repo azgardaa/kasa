@@ -1,79 +1,97 @@
 @keyframes fadeInFromTop {
-    from {
-      opacity: 0;
-      transform: translateY(-50px); 
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); 
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-50px); 
   }
-  
-  @keyframes fadeOutToTop {
-    from {
-      opacity: 1;
-      transform: translateY(0); 
-    }
-    to {
-      opacity: 0;
-      transform: translateY(-50px); 
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
   }
+}
+
+@keyframes fadeOutToTop {
+  from {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px); 
+  }
+}
+
+.Tab {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: baseline;
   
-  .Box_Tab {
+  .Bouton_Tab {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    .Tab {
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-        align-items: baseline;
-        .Bouton_Tab {
-            width: 100%;
-            display: flex;
-            margin: 2% 0 ;
-        label {
-            display: block;
-            width: 90%;
-            background: #FF6060 ;
-            border-radius: 5px 0 0 5px;
-            padding: 2% 0 2% 1%;
-            color: white;
-            font-weight: 700;
-            font-size: 18px;
-            }
-        button {
-            width: 10%;
-            background-color: #FF6060;
-            border: none ;
-            border-radius: 0 5px 5px 0 ;
-            cursor: pointer;
-            }
-            .notflipped {
-                transform: rotate(0deg);
-                transition: transform 0.5s ease; 
-            }
-            .flipped {
-                transform: rotate(180deg);
-                transition: transform 0.5s ease; 
-              }
-        }
+    margin: 2% 0 ;
+    
+    label {
+      display: block;
+      width: 90%;
+      background: #FF6060 ;
+      border-radius: 5px 0 0 5px;
+      padding: 2% 0 2% 1%;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
     }
-        p {
-            
-            z-index: -1;
-            opacity: 0;
-            animation: fadeOutToTop  0.5s ease forwards;
-          }
-        p.show {
-            animation: fadeInFromTop 0.5s ease forwards;
-            margin: -3% 0 0 0 ;
-            padding: 3% 3% 3% 3%;
-            margin-bottom: 3%;
-            width: 94%;
-            background-color: #F6F6F673;
-            line-height: 25px;
-        }
-          
+
+    button {
+      width: 10%;
+      background-color: #FF6060;
+      border: none ;
+      border-radius: 0 5px 5px 0 ;
+      cursor: pointer;
     }
+
+    .notflipped {
+      transform: rotate(0deg);
+      transition: transform 0.5s ease; 
+    }
+
+    .flipped {
+      transform: rotate(180deg);
+      transition: transform 0.5s ease; 
+    }
+  }
+
+  p {
+    z-index: -1;
+    opacity: 0;
+    animation: fadeOutToTop  0.5s ease forwards;
+  }
+
+  p.show {
+    animation: fadeInFromTop 0.5s ease forwards;
+    margin: -3% 0 0 0 ;
+    padding: 3% 3% 3% 3%;
+    width: 94%;
+    background-color: #F6F6F673;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Tab {
+    width: 100%;
+    .Bouton_Tab{
+      label {
+        font-size: 14px;
+        padding: 2% 0 2% 2%;
+      }
+      img {
+        width: 70% ;
+      }
+    }
+    p.show {
+      font-size: 12px;
+    }
+  }
+}
 

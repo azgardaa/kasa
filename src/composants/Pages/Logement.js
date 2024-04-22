@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import Slider from "../composant/Slider";
 import Tags from "../composant/Tags";
 import Rating from "../composant/Rating";
-import starA from "../image/star-active.svg";
-import starNA from "../image/star-inactive.svg";
+import Erreur from "./Erreur";
 import Tab from "../composant/Tab";
 
 function Logement() {
@@ -28,7 +27,9 @@ function Logement() {
       setLogement(selectedLogement);
     }
   }, [id]);
-
+  if (logement.id === undefined) {
+    return <Erreur />;
+  }
   return (
     <div>
       <div>
@@ -49,16 +50,12 @@ function Logement() {
               alt={`Photo de ${logement.host.name}`}
             ></img>
           </div>
-          <Rating rating={logement.rating} starA={starA} starNA={starNA} />
+          <Rating rating={logement.rating} />
         </div>
       </div>
       <div className="Box_Tab">
-        <div className="Tab">
-          <Tab titre="Déscription" information={logement.description} />
-        </div>
-        <div className="Tab">
-          <Tab titre="Équipements" information={logement.equipments} />
-        </div>
+        <Tab titre="Déscription" information={logement.description} />
+        <Tab titre="Équipements" information={logement.equipments} />
       </div>
     </div>
   );

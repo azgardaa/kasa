@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const Accroche = "Chez vous, partout et ailleurs";
 
 function Accueil() {
-  console.log(data);
   return (
     <div>
       <Box_Accueil Image={Image_Accueil} Accroche={Accroche} />

@@ -29,3 +29,15 @@
     }
     
 }
+@media screen and (max-width: 480px) {
+    .Box_Accueil{
+        max-height: 120px;
+       
+        .Text_Accueil {
+            h1{
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+}

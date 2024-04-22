@@ -11,7 +11,7 @@ function Tab({ titre, information }) {
   };
 
   return (
-    <>
+    <div className="Tab">
       <div className="Bouton_Tab">
         <label className="Label_Tab">{titre}</label>
         <button onClick={handleButtonClick}>
@@ -40,7 +40,7 @@ function Tab({ titre, information }) {
             : info}
         </p>
       )}
-    </>
+    </div>
   );
 }
 

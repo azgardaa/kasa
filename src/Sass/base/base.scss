@@ -1,6 +1,13 @@
 * {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
 }
 body {
     padding: 0 30px;
+    height: 100%;
+}
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+        min-height: 100vh;
+    }   
 }

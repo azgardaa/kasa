@@ -18,13 +18,23 @@ function Slider({ images }) {
 
   return (
     <div className="Box_Slider">
-      <img src={Arrow} className="Bouton_SliderG" onClick={prevImage}></img>
+      <img
+        src={Arrow}
+        className="Bouton_SliderG"
+        onClick={prevImage}
+        alt="fleche image precedente"
+      ></img>
       <img
         className="Image_Slider"
         src={images[imageIndex]}
         alt={`Image n°${imageIndex}`}
       />
-      <img src={Arrow} className="Bouton_SliderD" onClick={nextImage}></img>
+      <img
+        src={Arrow}
+        className="Bouton_SliderD"
+        onClick={nextImage}
+        alt="fleche image suivante"
+      ></img>
     </div>
   );
 }

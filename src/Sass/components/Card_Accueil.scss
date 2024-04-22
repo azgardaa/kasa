@@ -23,3 +23,14 @@
     margin: 15px;
     color: white;
 }}
+@media screen and (max-width: 480px) {
+    .Card_Appartement{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .Appartement{
+        .Cover_Appartement{
+            max-height: 250px;
+        }
+    }
+}
