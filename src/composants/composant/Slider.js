@@ -29,6 +29,9 @@ function Slider({ images }) {
         src={images[imageIndex]}
         alt={`Image n°${imageIndex}`}
       />
+      <p className="Compt_Slider">
+        {imageIndex + 1} / {images.length}
+      </p>
       <img
         src={Arrow}
         className="Bouton_SliderD"
