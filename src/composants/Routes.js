@@ -9,7 +9,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Accueil />} />
-      <Route path="/A_Propos" element={<A_Propos />} />
+      <Route path="/a-propos" element={<A_Propos />} />
       <Route path="/logement/:id" element={<Logement />} />
       <Route path="*" element={<Erreur />} />
     </Routes>

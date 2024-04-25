@@ -43,7 +43,7 @@ function Logement() {
         </div>
         <div className="Box_Host">
           <div className="Info_Host">
-            <h3 className="Logement_Host">{logement.host.name}</h3>
+            <p className="Logement_Host">{logement.host.name}</p>
             <img
               className="Picture_Host"
               src={logement.host.picture}
@@ -54,7 +54,7 @@ function Logement() {
         </div>
       </div>
       <div className="Box_Tab">
-        <Tab titre="Déscription" information={logement.description} />
+        <Tab titre="Description" information={logement.description} />
         <Tab titre="Équipements" information={logement.equipments} />
       </div>
     </div>
