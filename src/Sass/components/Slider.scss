@@ -1,42 +1,45 @@
 @import "../base/mixin.scss";
 
 .Box_Slider {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 20px;
+
+  .Image_Slider {
+    object-fit: cover;
     position: relative;
-    display: flex;
     width: 100%;
-    height: 450px;
-    margin-bottom: 20px;
-    .Image_Slider{
-        object-fit: cover;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px
-    }
-    .Bouton_SliderG {
-        @include slider-arrow-button('left');
-      }
-      
-    .Bouton_SliderD {
-        @include slider-arrow-button('right');
-        transform: scaleX(-1);
-      }
-    .Compt_Slider {
-      position: absolute;
-      left: 45%;
-      right: 45%;
-      bottom: 0;
-      font-size: 18px;
-      color: white;
-    }
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .Bouton_SliderG {
+    @include slider-arrow-button('left');
+  }
+
+  .Bouton_SliderD {
+    @include slider-arrow-button('right');
+    transform: scaleX(-1);
+  }
+
+  .Compt_Slider {
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    bottom: 0;
+    font-size: 18px;
+    color: white;
+  }
 }
 
-@media screen and (max-width: 480px) {
-    .Box_Slider {
-      height: 260px;
-      .Compt_Slider {
-        display: none;
-      }
-    }   
+@media screen and (max-width: 768px) {
+  .Box_Slider {
+    height: 260px;
 
+    .Compt_Slider {
+      display: none;
+    }
+  }
 }

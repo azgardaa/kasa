@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+
     .Image_Apropos {
         object-fit: cover;
         position: relative;
@@ -11,22 +12,25 @@
         width: 100%;
         max-height: 250px;
         margin: 10px 0;
+
+        @media screen and (max-width: 768px) {
+            height: 120px;
+        }
     }
+
     .Tab {
-        width: 80%;
+        width: 100%;
+
         .Bouton_Tab {
             margin: 10px 0;
-            .Label_Tab{
+
+            .Label_Tab {
                 padding: 1% 0 1% 1%;
             }
         }
+
         p.show {
             padding: 3% 3% 1% 3%;
         }
     }
 }
-@media screen and (max-width: 480px) {
-    .Image_Apropos {
-        height: 120px;
-    }
-  }

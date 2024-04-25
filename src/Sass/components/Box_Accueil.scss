@@ -29,10 +29,12 @@
     }
     
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .Box_Accueil{
         max-height: 120px;
-       
+        .Image_Accueil{
+            box-shadow: none;
+        }
         .Text_Accueil {
             h1{
                 color: white;

@@ -1,29 +1,35 @@
-.Logement_Box{
+.Logement_Box {
     display: flex;
     justify-content: space-between;
-    .Logement_Info  {
+    
+    .Logement_Info {
         width: 80%;
+        
         .Logement_Titre {
-        font-size: 36px;
-        font-weight: 500;
-        color: #FF6060;
-        margin: 15px 0 0 0;
-}
+            font-size: 36px;
+            font-weight: 500;
+            color: #FF6060;
+            margin: 15px 0 0 0;
+        }
+        
         .Logement_Location {
-        font-size: 18px;
-        font-weight: 500;
-        margin: 5px 0 0 0;
-}
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0 0 0;
+        }
     }
-    .Box_Host{
+    
+    .Box_Host {
         display: flex;
         flex-direction: column;
         width: 20%;
+        
         .Info_Host {
             display: flex;
             justify-content: flex-end;
             gap: 5%;
             height: 50%;
+            
             .Logement_Host {
                 display: flex;
                 justify-content: flex-end;
@@ -35,7 +41,8 @@
                 color: #FF6060;
                 width: 50%;
             }
-            .Picture_Host{
+            
+            .Picture_Host {
                 border-radius: 50%;
                 height: 100%;
                 max-width: 64px;
@@ -44,38 +51,44 @@
             }
         }
     }
-   
-    
-      
-} 
-.Box_Tab {
-        display: flex;
-        justify-content: space-between;
-    }
+}
 
-@media screen and (max-width: 480px) {
-    .Logement_Box{
+.Box_Tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .Logement_Box {
         display: flex;
         flex-direction: column;
+        
         .Logement_Info {
             width: 100%;
+            
             .Logement_Titre {
                 font-size: 18px;
             }
-            .Logement_Location{
+            
+            .Logement_Location {
                 font-size: 14px;
             }
         }
+        
         .Box_Host {
             width: 100%;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
+            
             .Info_Host {
                 gap: 10%;
+                
                 .Logement_Host {
                     font-size: 12px;
                 }
+                
                 .Picture_Host {
                     max-width: 48px;
                     max-height: 48px;
@@ -83,6 +96,7 @@
             }
         }
     }
+    
     .Box_Tab {
         flex-direction: column;
     }

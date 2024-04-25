@@ -1,36 +1,43 @@
 .Card_Appartement {
     display: flex;
     width: 30%;
-    margin: 1%; 
-}
-.Appartement{
+    margin: 1%;
+  }
+  
+  .Appartement {
     display: flex;
-    align-items:end;
+    align-items: end;
     width: 100%;
+  
     .Cover_Appartement {
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-    height: 340px;
-    border-radius: 25px;
-}
-.Titre_Appartement{
-    position:absolute;
-    display: flex;
-    width: 190px;
-    flex-wrap: wrap;
-    font-size: 18px;
-    margin: 15px;
-    color: white;
-}}
-@media screen and (max-width: 480px) {
-    .Card_Appartement{
-        width: 100%;
-        margin: 2% 0;
+      object-fit: cover;
+      position: relative;
+      width: 100%;
+      height: 340px;
+      border-radius: 25px;
     }
-    .Appartement{
-        .Cover_Appartement{
-            max-height: 250px;
-        }
+  
+    .Titre_Appartement {
+      position: absolute;
+      display: flex;
+      max-width: 190px;
+      flex-wrap: wrap;
+      font-size: 18px;
+      margin: 15px;
+      color: white;
     }
-}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Card_Appartement {
+      width: 100%;
+      margin: 2% 0;
+    }
+  
+    .Appartement {
+      .Cover_Appartement {
+        max-height: 250px;
+      }
+    }
+  }
+  
